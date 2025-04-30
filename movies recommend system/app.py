@@ -14,19 +14,18 @@ from fuzzywuzzy import process
 def recommend(movie):
     movie = movie.lower()
     titles = movies['title'].str.lower().tolist()
-    
-   match = process.extractOne(movie, titles)
 
-if match is None or match[1] < 60:
-    return ["Movie not found. Please try again."]
+    closest_match = process.extractOne(movie, titles)
 
-# proceed if a good match is found
-movie_title = match[0]
-index = movies[movies['title'].str.lower() == movie_title].index[0]
+    if closest_match[1] < 60:  # similarity threshold
+        return []
 
+    index = movies[movies['title'].str.lower() == closest_match[0]].index[0]
     distances = similarity[index]
     movie_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x: x[1])[1:6]
+    
     return [movies.iloc[i[0]].title for i in movie_list]
+
 
 
 # Streamlit UI
