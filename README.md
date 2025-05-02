@@ -33,3 +33,15 @@ This is a content-based movie recommendation system built using Python, Pandas, 
 
 1. Clone the repository
 2. Install dependencies:
+## Demo 
+[Check out the Content-Based Movie Recommendation System](https://content-based-movie-recommend-system-ijcvulpvjgix5etr5kwwuw.streamlit.app/)
+
+
+## Sample Output
+![Screenshot_2025_0502_113238](https://github.com/user-attachments/assets/036b1a4e-0b44-4273-9a91-31b2df866597)
+![Screenshot_2025_0502_113329](https://github.com/user-attachments/assets/ad1751c6-67d5-458c-8e62-00d964504e86)
+
+
+## Alert
+🔴 If you got page shows "there is no activity for longer time" then it shows a 'backup' button just click on it and website's start again.
+
