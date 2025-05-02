@@ -43,5 +43,5 @@ This is a content-based movie recommendation system built using Python, Pandas, 
 
 
 ## Alert
-🔴 If you got page shows "there is no activity for longer time" then it shows a 'backup' button just click on it and website's start again.
+🔴 If you got page shows "there is no activity for longer time" then it shows a `backup` button just click on it and website's start again.
 
